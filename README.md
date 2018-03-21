@@ -17,6 +17,12 @@ In this repository we will be looking at verilog codes of various Inter Device C
 * __Baud rate :__
     It is the approximate rate at which data can be transmitted. Approximately the time period of one bit in a UART transmission is inverse of *Baud rate*.
 
+### Synchronizing and Sampling
+
+One way we could sample the data is to transmit bit on *positive edge* of a *clock cycle* and on receiver side is to sample the data received on every *negative edge* of *clock cycle*.</br>
+
+But as the name *UART* suggest it is *asynchronous* we donot have a clock to synchronize the *transmitter* and *receiver*. The receiver's sequence starts with falling edge of start bit. The *receiver's internal clock* is entirely *independent* of *transmitter's internal clock* and the __falling edge__ of a __start bit__ can occur at any point in the *receiver's clock cycle*. So, for this we try to make __positive edge__ of *receiver's clock* occur nearly at __middle__ of the bit. To ensure this we make the baud rate of receiver's clock to be much *higher* than transmitter's (actual baud rate) by a factor of 8 or 16 or 32.  
+
 ## Serial Peripheral Interface (SPI)
 
 ## References
