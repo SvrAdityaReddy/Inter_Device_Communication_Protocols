@@ -4,8 +4,6 @@ In this repository we will be looking at verilog codes of various Inter Device C
 
 ## Universal Asynchronous Receiver Transmitter (UART)
 
-![image](https://user-images.githubusercontent.com/19650574/37871805-e7f9fe82-3014-11e8-9f26-fe22993ee3c5.png)
-
 ### Terminologies used in UART 
 
 * __Start bit :__
