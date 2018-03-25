@@ -4,7 +4,7 @@ In this repository we will be looking at verilog codes of various Inter Device C
 
 ## Universal Asynchronous Receiver Transmitter (UART)
 
-![image](https://user-images.githubusercontent.com/19650574/37669739-981198a6-2c8d-11e8-80f9-f0b4e0e53fa8.png)
+![image](https://user-images.githubusercontent.com/19650574/37871805-e7f9fe82-3014-11e8-9f26-fe22993ee3c5.png)
 
 ### Terminologies used in UART 
 
@@ -28,6 +28,7 @@ But as the name *UART* suggest it is *asynchronous* we donot have a clock to syn
 ## References
 
 [1] [Back to Basics: The Universal Asynchronous Receiver/Transmitter (UART)](https://www.allaboutcircuits.com/technical-articles/back-to-basics-the-universal-asynchronous-receiver-transmitter-uart/)</br>
-[2] [Serial Peripheral Interface (SPI) from sparkfun](https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi)</br>
-[3] [Serial Peripheral Interface Bus](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus)</br>
-[4] [Clock Phase and Polarity](http://dlnware.com/dll/Clock-Phase-and-Polarity)</br>
+[2] [Serial Communication](https://learn.sparkfun.com/tutorials/serial-communication)
+[3] [Serial Peripheral Interface (SPI) from sparkfun](https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi)</br>
+[4] [Serial Peripheral Interface Bus](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus)</br>
+[5] [Clock Phase and Polarity](http://dlnware.com/dll/Clock-Phase-and-Polarity)</br>
