@@ -26,7 +26,7 @@ But as the name *UART* suggest it is *asynchronous* we donot have a clock to syn
 ## References
 
 [1] [Back to Basics: The Universal Asynchronous Receiver/Transmitter (UART)](https://www.allaboutcircuits.com/technical-articles/back-to-basics-the-universal-asynchronous-receiver-transmitter-uart/)</br>
-[2] [Serial Communication](https://learn.sparkfun.com/tutorials/serial-communication)
+[2] [Serial Communication](https://learn.sparkfun.com/tutorials/serial-communication)</br>
 [3] [Serial Peripheral Interface (SPI) from sparkfun](https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi)</br>
 [4] [Serial Peripheral Interface Bus](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus)</br>
 [5] [Clock Phase and Polarity](http://dlnware.com/dll/Clock-Phase-and-Polarity)</br>
