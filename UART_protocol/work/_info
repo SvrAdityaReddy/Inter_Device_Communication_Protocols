@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Modeltech_pe_edu_10.4a/examples
+vuart
+DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+!s110 1522317201
+!i10b 1
+!s100 4Rb^@j3Q2ed>gBKZVeFd;2
+IX:2:;=kO?WAcQhaS2<PGI0
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+!s105 uart_sv_unit
+S1
+Z1 dC:/Users/A/Documents/GitHub/BUS_PROTOCOLS/UART_protocol
+w1522317193
+8C:\Users\A\Documents\GitHub\BUS_PROTOCOLS\UART_protocol\uart.sv
+FC:\Users\A\Documents\GitHub\BUS_PROTOCOLS\UART_protocol\uart.sv
+L0 1
+Z2 OP;L;10.4a;61
+r1
+!s85 0
+31
+!s108 1522317201.000000
+!s107 C:\Users\A\Documents\GitHub\BUS_PROTOCOLS\UART_protocol\uart.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:\Users\A\Documents\GitHub\BUS_PROTOCOLS\UART_protocol\uart.sv|
+!s101 -O0
+!i113 1
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vuartTest
+!s110 1522316896
+!i10b 1
+!s100 M@Rlbz?]fEYOKjiA5DNB>1
+I<BR=j5P>3JfkfN81MBFhV0
+R0
+R1
+w1522064746
+8C:/Users/A/Documents/GitHub/BUS_PROTOCOLS/UART_protocol/uart_test.v
+FC:/Users/A/Documents/GitHub/BUS_PROTOCOLS/UART_protocol/uart_test.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1522316896.000000
+!s107 C:/Users/A/Documents/GitHub/BUS_PROTOCOLS/UART_protocol/uart_test.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/A/Documents/GitHub/BUS_PROTOCOLS/UART_protocol/uart_test.v|
+!s101 -O0
+!i113 1
+o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+nuart@test

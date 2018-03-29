@@ -1,0 +1,8 @@
+C:/Users/A/Documents/GitHub/BUS_PROTOCOLS/UART_protocol/uart_test.v {1 {vlog -work work -stats=none C:/Users/A/Documents/GitHub/BUS_PROTOCOLS/UART_protocol/uart_test.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module uartTest
+
+Top level modules:
+	uartTest
+
+} {} {}}
