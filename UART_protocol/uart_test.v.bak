@@ -1,0 +1,4 @@
+module uartTest;
+	
+    uart uart_tx();
+endmodule
