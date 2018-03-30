@@ -45,7 +45,6 @@ module uart (clk, reset, rw, databus_read, databus_write, Rx, Tx);
             else begin
                 if(Rx_count==0 && Rx==0) begin
                     Tx<=Rx;
-                    $display("Rx_reg begin %b",Rx_count);
                     Rx_count<=Rx_count+1;
                 end
                 else begin 
@@ -53,14 +52,12 @@ module uart (clk, reset, rw, databus_read, databus_write, Rx, Tx);
                         Rx_reg[Rx_count-1]<=Rx;
                         Rx_count<=Rx_count+1;
                         Tx<=Rx;
-                        $display("Rx %b",Rx);
                     end
                     else begin 
                         if(Rx_count==9) begin
                             Tx<=1;
                             Rx_count<=Rx_count+1;
                             databus_write<=Rx_reg;
-                            $display("Rx_reg final %b",Rx_reg);
                         end
                     end
                 end
