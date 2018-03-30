@@ -7,9 +7,9 @@ module uart (clk, reset, rw, databus_read, databus_write, Rx, Tx);
     input Rx;
     output reg Tx;
     // internal variables
-    reg [2:0] Tx_count;
+    reg [3:0] Tx_count;
     reg [7:0] Rx_reg;
-    reg [2:0] Rx_count;
+    reg [3:0] Rx_count;
     always_ff @(posedge clk) begin
         if(rw==0) begin
             if(reset) begin
@@ -21,13 +21,17 @@ module uart (clk, reset, rw, databus_read, databus_write, Rx, Tx);
                     Tx<=0;
                     Tx_count<=Tx_count+1;
                 end
-                if(Tx_count > 0 && Tx_count < 9) begin
-                    Tx<=databus_read[Tx_count];
-                    Tx_count<=Tx_count+1;
-                    $display("Tx %b", databus_read[Tx_count]);
-                end
-                if(Tx_count==9) begin
-                    Tx<=1;
+                else begin 
+                    if(Tx_count > 0 && Tx_count < 9) begin
+                        Tx<=databus_read[Tx_count-1];
+                        Tx_count<=Tx_count+1;
+                        $display("%b",Tx_count);
+                    end
+                    else begin 
+                        if(Tx_count==9) begin
+                            Tx<=1;
+                        end
+                    end
                 end
             end
         end 
@@ -39,21 +43,26 @@ module uart (clk, reset, rw, databus_read, databus_write, Rx, Tx);
                 Tx<=1;                    
             end
             else begin
-                if(Rx_count==0) begin
+                if(Rx_count==0 && Rx==0) begin
                     Tx<=Rx;
+                    $display("Rx_reg begin %b",Rx_count);
                     Rx_count<=Rx_count+1;
                 end
-                if(Rx_count > 0 && Rx_count < 9) begin
-                    Rx_reg[Rx_count-1]<=Rx;
-                    Rx_count<=Rx_count+1;
-                    $display("Rx_reg %b",Rx_reg);
-                    Tx<=Rx;
-                end
-                if(Rx_count==9) begin
-                    Tx<=1;
-                    Rx_count<=Rx_count+1;
-                    databus_write<=Rx_reg;
-                    $display("Rx_reg final %b",Rx_reg);
+                else begin 
+                    if(Rx_count >= 1 && Rx_count < 9) begin
+                        Rx_reg[Rx_count-1]<=Rx;
+                        Rx_count<=Rx_count+1;
+                        Tx<=Rx;
+                        $display("Rx %b",Rx);
+                    end
+                    else begin 
+                        if(Rx_count==9) begin
+                            Tx<=1;
+                            Rx_count<=Rx_count+1;
+                            databus_write<=Rx_reg;
+                            $display("Rx_reg final %b",Rx_reg);
+                        end
+                    end
                 end
             end
         end

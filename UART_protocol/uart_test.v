@@ -9,7 +9,6 @@ module uartTest;
     reg [7:0] databus2;
     wire Tx2;
     wire [7:0] data_output2;
-    // memory_design G(data_output, data_input, address, enable, read_write, clk);
     uart uart_tx(clk, reset, rw, databus, data_output, Rx, Tx);
     uart uart_rx(clk2, reset2, rw2, databus2, data_output2, Tx, Tx2);
     initial begin
@@ -105,13 +104,13 @@ module uartTest;
         #195 clk2=0;
         #200 clk2=1;
         #205 clk2=0;
-        #210 clk=1;
-        #215 clk=0;
-        #220 clk=1;
-        #225 clk=0;
-        #230 clk=1;
-        #235 clk=0;
-        #240 clk=1;
-        #245 clk=0;
+        #210 clk2=1;
+        #215 clk2=0;
+        #220 clk2=1;
+        #225 clk2=0;
+        #230 clk2=1;
+        #235 clk2=0;
+        #240 clk2=1;
+        #245 clk2=0;
     end
 endmodule
