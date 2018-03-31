@@ -8,3 +8,51 @@ z2
 !i10f 100
 cModel Technology
 dC:/Users/A/Documents/GitHub/BUS_PROTOCOLS
+vspi_master
+Z0 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z1 !s110 1522493277
+!i10b 1
+!s100 oHGhJ=zKh08F:FzbP:^o<0
+IZJ_[XB@kNN_gf<A253:JI0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 !s105 spi_sv_unit
+S1
+Z4 dC:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol
+Z5 w1522492020
+Z6 8C:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol/spi.sv
+Z7 FC:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol/spi.sv
+L0 1
+Z8 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z9 !s108 1522493277.000000
+Z10 !s107 C:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol/spi.sv|
+Z11 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol/spi.sv|
+!s101 -O0
+!i113 1
+Z12 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vspi_slave
+R0
+R1
+!i10b 1
+!s100 h3?6=3[:1WPJ`gVZM3B^T2
+If2B9>7hbkHU6P1QTSDQS=1
+R2
+R3
+S1
+R4
+R5
+R6
+R7
+L0 5
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+!i113 1
+R12
