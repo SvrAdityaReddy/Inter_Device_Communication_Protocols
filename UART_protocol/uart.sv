@@ -10,6 +10,9 @@ module uart (clk, reset, rw, databus_read, databus_write, Rx, Tx);
     reg [3:0] Tx_count;
     reg [7:0] Rx_reg;
     reg [3:0] Rx_count;
+
+    // transmitter 
+
     always_ff @(posedge clk) begin
         if(rw==0) begin
             if(reset) begin
@@ -35,7 +38,12 @@ module uart (clk, reset, rw, databus_read, databus_write, Rx, Tx);
                 end
             end
         end 
-        else begin
+    end
+
+    // receiver
+
+    always_ff @(posedge clk) begin
+        if (rw) begin
             if(reset) begin
                 Rx_reg<=8'b00000000;
                 Rx_count<=0;

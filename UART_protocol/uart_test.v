@@ -9,8 +9,10 @@ module uartTest;
     reg [7:0] databus2;
     wire Tx2;
     wire [7:0] data_output2;
+
     uart uart_tx(clk, reset, rw, databus, data_output, Rx, Tx);
     uart uart_rx(clk2, reset2, rw2, databus2, data_output2, Tx, Tx2);
+    
     initial begin
         reset=1;
         reset2=1;
