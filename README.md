@@ -35,6 +35,5 @@ Here communication happens between master chip and slave chips. The important te
 [2] [Fun and Easy SPI - How the SPI Protocol Works](https://www.youtube.com/watch?v=AuhFr88mjt0)</br>
 [3] [Serial Communication](https://learn.sparkfun.com/tutorials/serial-communication)</br>
 [4] [Serial Peripheral Interface (SPI) from sparkfun](https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi)</br>
-[5] [Serial Peripheral Interface Bus](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus)</br>
+[5] [SPI library](https://www.arduino.cc/en/Reference/SPI)</br>
 [6] [Clock Phase and Polarity](http://dlnware.com/dll/Clock-Phase-and-Polarity)</br>
-
