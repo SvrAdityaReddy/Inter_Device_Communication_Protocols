@@ -5,4 +5,13 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	spi_test
 
+} {} {}} C:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol/spi.sv {1 {vlog -work work -sv -stats=none C:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol/spi.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module spi_master
+-- Compiling module spi_slave
+
+Top level modules:
+	spi_master
+	spi_slave
+
 } {} {}}

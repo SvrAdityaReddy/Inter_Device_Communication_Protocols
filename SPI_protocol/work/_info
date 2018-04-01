@@ -10,23 +10,23 @@ cModel Technology
 dC:/Users/A/Documents/GitHub/BUS_PROTOCOLS
 vspi_master
 Z0 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
-Z1 !s110 1522590226
+Z1 !s110 1522604075
 !i10b 1
-!s100 KYH^jG:1mC:[ohcDMi9nh3
-I^z6=0:4e_?Fh^4;C[_4350
+!s100 NAUK5@2@@eQ@9_O1AR`Q<1
+I[FTZnCT<:U6`cbPGCfLj>0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 !s105 spi_sv_unit
 S1
 Z4 dC:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol
-Z5 w1522590210
+Z5 w1522604027
 Z6 8C:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol/spi.sv
 Z7 FC:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol/spi.sv
-L0 3
+L0 5
 Z8 OP;L;10.4a;61
 r1
 !s85 0
 31
-Z9 !s108 1522590226.000000
+Z9 !s108 1522604075.000000
 Z10 !s107 C:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol/spi.sv|
 Z11 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol/spi.sv|
 !s101 -O0
@@ -36,8 +36,8 @@ vspi_slave
 R0
 R1
 !i10b 1
-!s100 GUZMQI@82HQgzWGdGj[E;2
-IMZY`SM9g]LhFThKKhUKbD2
+!s100 UWZ;znB2Xo2^:SJnL=<=;0
+IKJOcal=ocnTF95N]=ldUP0
 R2
 R3
 S1
@@ -45,7 +45,7 @@ R4
 R5
 R6
 R7
-L0 9
+L0 44
 R8
 r1
 !s85 0
@@ -59,11 +59,11 @@ R12
 vspi_test
 R1
 !i10b 1
-!s100 ZeRBCYdZjW1laM[M5QScd3
-IC`Phgbm[8MFE7S<z31WVT0
+!s100 Kg3;oX6]DW<h;A=5^o_:>0
+IN`Z0Y<j>Q16<KJ5zcad0A1
 R2
 R4
-w1522589128
+w1522603885
 8C:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol/spi_test.v
 FC:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol/spi_test.v
 L0 1
