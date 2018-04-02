@@ -1,3 +1,5 @@
+// to connect master and slave
+
 module data_path(data_in,sclk,rst,data_out,ss,mosi,miso);
     input [7:0] data_in;
     input rst;
@@ -6,6 +8,8 @@ module data_path(data_in,sclk,rst,data_out,ss,mosi,miso);
     spi_master spi_m(sclk,ss,rst,mosi,miso,data_in,data_out);
     spi_slave spi_s(sclk,ss,rst,mosi,miso);
 endmodule
+
+// testbench
 
 module spi_test;
     wire miso;
