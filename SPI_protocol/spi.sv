@@ -51,10 +51,8 @@ module spi_slave (sclk,ss,rst,mosi,miso);
     reg [7:0] mem;
     reg [5:0] count;
     always_ff @(negedge sclk) begin
-        $display("count sclk = %b", count);
         if (ss) begin
             count=0;
-            $display("count sclk initial = %b", count);
         end
         if(ss==0 && rst==0) begin
             if(count>=0) begin
@@ -73,7 +71,6 @@ module spi_slave (sclk,ss,rst,mosi,miso);
                         if(count<16) begin
                             miso<=mem[count-8];
                             count<=count+1; 
-                            $display("count outside = %b ,,,, %b,,,,,%b", count,miso,mem);
                         end
                         else begin
                             count<=0;

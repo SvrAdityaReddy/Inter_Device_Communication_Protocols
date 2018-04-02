@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/Users/A/Documents/GitHub/BUS_PROTOCOLS
 vdata_path
-Z0 !s110 1522684972
+Z0 !s110 1522685089
 !i10b 1
 !s100 hgH`m?V:AIaF=]JFh3m[;3
 InicF^RaYGXF<6`DefkcH<2
@@ -23,7 +23,7 @@ Z6 OP;L;10.4a;61
 r1
 !s85 0
 31
-Z7 !s108 1522684972.000000
+Z7 !s108 1522685089.000000
 Z8 !s107 C:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol/spi_test.v|
 Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol/spi_test.v|
 !s101 -O0
@@ -39,7 +39,7 @@ R1
 Z12 !s105 spi_sv_unit
 S1
 R2
-Z13 w1522684958
+Z13 w1522685068
 Z14 8C:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol/spi.sv
 Z15 FC:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol/spi.sv
 L0 5
@@ -57,8 +57,8 @@ vspi_slave
 R11
 R0
 !i10b 1
-!s100 C>RC4JbBoGho][l<Q[l^43
-IZ=coYfRio7gbhlJQko_K[2
+!s100 ^5bYC3gXV2`AU6if4c7eT3
+IJhca=j>B`<3GN0jQSlM702
 R1
 R12
 S1
