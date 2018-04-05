@@ -31,6 +31,86 @@ It is a "Full Duplex Communication Protocol"
 
 * __SS:-__ This is known as "Slave Select". In general, the number of slave lines are equal to number of slaves that a master controls. In general slave select lines are kept "LOGIC HIGH" to disable all the slaves. Whenever a master wants to send data to a slave that particular slave's slave select line is made "LOGIC LOW" to enable the slave to receive the data sent by the master.
 
+There are various modes of transmission which depends on the datasheet of the particular component. They are as follow [5]
+
+<table style="border-collapse:collapse" width="90%" cellpadding="5" border="1">
+
+<tbody>
+
+<tr>
+
+<td align="center"><b>Mode</b></td>
+
+<td align="center"><b>Clock Polarity (CPOL)</b></td>
+
+<td align="center"><b>Clock Phase (CPHA)</b></td>
+
+<td align="left"><b>Output Edge</b></td>
+
+<td align="left"><b>Data Capture</b></td>
+
+</tr>
+
+<tr>
+
+<td align="left">SPI_MODE0</td>
+
+<td align="center">0</td>
+
+<td align="center">0</td>
+
+<td>Falling</td>
+
+<td>Rising</td>
+
+</tr>
+
+<tr>
+
+<td align="left">SPI_MODE1</td>
+
+<td align="center">0</td>
+
+<td align="center">1</td>
+
+<td>Rising</td>
+
+<td>Falling</td>
+
+</tr>
+
+<tr>
+
+<td align="left">SPI_MODE2</td>
+
+<td align="center">1</td>
+
+<td align="center">0</td>
+
+<td>Rising</td>
+
+<td>Falling</td>
+
+</tr>
+
+<tr>
+
+<td align="left">SPI_MODE3</td>
+
+<td align="center">1</td>
+
+<td align="center">1</td>
+
+<td>Falling</td>
+
+<td>Rising</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
 ## References
 
 [1] [Back to Basics: The Universal Asynchronous Receiver/Transmitter (UART)](https://www.allaboutcircuits.com/technical-articles/back-to-basics-the-universal-asynchronous-receiver-transmitter-uart/)</br>
