@@ -33,7 +33,7 @@ It is a "Full Duplex Communication Protocol"
 
 There are various modes of transmission which depends on the datasheet of the particular component. They are as follow [5]
 
-<table style="border-collapse:collapse" width="90%" cellpadding="5" border="1">
+<table style="border-collapse:collapse" width="90%" cellpadding="5">
 
 <tbody>
 
