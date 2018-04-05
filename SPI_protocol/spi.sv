@@ -8,7 +8,8 @@ module spi_master (sclk,ss,rst,mosi,miso,data_in,data_out);
     output reg sclk,ss,mosi;
     output reg [7:0] data_out;
     // internal variable
-    reg [5:0] count;
+    reg [3:0] count_send;
+    reg [3:0] count_recv;
     reg [7:0] mem;
     initial begin
         sclk=0;
@@ -20,23 +21,32 @@ module spi_master (sclk,ss,rst,mosi,miso,data_in,data_out);
     end
     always_ff @(posedge sclk) begin
         if(rst) begin
-            count<=0;
+            count_send<=0;
         end
         if(rst==0) begin
-            if(count>=0) begin 
-                if(count<8) begin
-                    mosi<=data_in[count];
-                    count<=count+1;
+            if(count_send>=0) begin 
+                if(count_send<8) begin
+                    mosi<=data_in[count_send];
+                    count_send<=count_send+1;
                 end
                 else begin
-                    if(count<16) begin
-                        mem[count-8]<=miso;
-                        count<=count+1;
-                    end
-                    else begin
-                        data_out<=mem;
-                        count<=0;
-                    end
+                    count_send<=0;
+                end
+            end    
+        end
+    end
+    always_ff @(negedge sclk) begin
+        if(rst) begin
+            count_recv<=0;
+        end
+        if(rst==0) begin
+            if(count_recv>=0) begin 
+                if(count_recv<8) begin
+                    mem[count_recv]<=miso;
+                    count_recv<=count_recv+1;
+                end
+                else begin
+                    count_recv<=0;
                 end
             end    
         end
@@ -49,7 +59,8 @@ module spi_slave (sclk,ss,rst,mosi,miso);
     input sclk,mosi,ss,rst;
     output reg miso;
     reg [7:0] mem;
-    reg [5:0] count;
+    reg [3:0] count_send;
+    reg [3:0] count_recv;
     always_ff @(negedge sclk) begin
         if (ss) begin
             count=0;
