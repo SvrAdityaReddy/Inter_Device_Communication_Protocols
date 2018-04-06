@@ -9,21 +9,21 @@ z2
 cModel Technology
 dC:/Users/A/Documents/GitHub/BUS_PROTOCOLS
 vdata_path
-Z0 !s110 1522685089
+Z0 !s110 1522985166
 !i10b 1
-!s100 hgH`m?V:AIaF=]JFh3m[;3
-InicF^RaYGXF<6`DefkcH<2
+!s100 k1bXkz>GO90[@5lhK@X473
+Ie6ffZJEHIoEoi7TczOOoR0
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dC:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol
-Z3 w1522683617
+Z3 w1522984814
 Z4 8C:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol/spi_test.v
 Z5 FC:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol/spi_test.v
-L0 1
+L0 3
 Z6 OP;L;10.4a;61
 r1
 !s85 0
 31
-Z7 !s108 1522685089.000000
+Z7 !s108 1522985166.000000
 Z8 !s107 C:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol/spi_test.v|
 Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol/spi_test.v|
 !s101 -O0
@@ -33,13 +33,13 @@ vspi_master
 Z11 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
 R0
 !i10b 1
-!s100 UN<ijTj[?C?kTF<kl9RDJ1
-IRzz]C6hVSDmBj?C?[MdaN2
+!s100 aGS4[<BK?jYC8cS^aIKNh1
+If;e:[1M`geS=m;0cT9`LH0
 R1
 Z12 !s105 spi_sv_unit
 S1
 R2
-Z13 w1522685068
+Z13 w1522985133
 Z14 8C:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol/spi.sv
 Z15 FC:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol/spi.sv
 L0 5
@@ -47,18 +47,18 @@ R6
 r1
 !s85 0
 31
-R7
-Z16 !s107 C:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol/spi.sv|
-Z17 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol/spi.sv|
+Z16 !s108 1522985165.000000
+Z17 !s107 C:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol/spi.sv|
+Z18 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/A/Documents/GitHub/BUS_PROTOCOLS/SPI_protocol/spi.sv|
 !s101 -O0
 !i113 1
-Z18 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+Z19 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
 vspi_slave
 R11
 R0
 !i10b 1
-!s100 ^5bYC3gXV2`AU6if4c7eT3
-IJhca=j>B`<3GN0jQSlM702
+!s100 W9>BMYjRL=dhmNjCVdTGD3
+IJUA4Fe?l=acFHkB5;VQg90
 R1
 R12
 S1
@@ -66,28 +66,28 @@ R2
 R13
 R14
 R15
-L0 48
+L0 59
 R6
 r1
 !s85 0
 31
-R7
 R16
 R17
+R18
 !s101 -O0
 !i113 1
-R18
+R19
 vspi_test
 R0
 !i10b 1
-!s100 ZSNQKAl^m;[Fz?b8Hk[Rj3
-ImcMR9[@bOA9]m094eS6EE2
+!s100 AJbV7nzfX`Z9ckiEzLTgh3
+Imn0mDNm94XAM6FzFJJT;D0
 R1
 R2
 R3
 R4
 R5
-L0 10
+L0 14
 R6
 r1
 !s85 0
