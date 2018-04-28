@@ -11,6 +11,27 @@ module uart (clk, reset, rw, databus_read, databus_write, Rx, Tx);
     reg [7:0] Rx_reg;
     reg [3:0] Rx_count;
 
+    // assertions
+
+    property verify_reset_transmitter_1;
+        @(posedge clk) disable iff (rw)
+            (reset & !rw) |=> Tx<=1;
+    endproperty
+
+    property verify_reset_transmitter_2;
+        @(posedge clk) disable iff (rw)
+            (reset & !rw) |=> Tx_count<=0;
+    endproperty
+
+    property verify_final_output_receiver;
+        @(posedge clk) disable iff (!rw)
+            (rw & Rx_count==9) |=> databus_write<=databus_read;
+    endproperty
+
+    assert property(verify_reset_transmitter_1) else $error("assertion to verify reset in transmitter failed");
+    assert property(verify_reset_transmitter_2) else $error("assertion to verify reset in transmitter failed");
+    assert property(verify_final_output_receiver) else $error("assertion to verify final output in receiver failed");
+
     // transmitter 
 
     always_ff @(posedge clk) begin
